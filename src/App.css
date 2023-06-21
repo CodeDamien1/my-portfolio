@@ -1,38 +1,115 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.App-header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.App-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+.App-main section {
+  margin-bottom: 60px;
+}
+
+.App-main section h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.App-main section p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  display: grid;
+  gap: 40px;
+}
+
+.projects-list li {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.projects-list li h3 {
+  color: #333;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.projects-list li p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-info li {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.App-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }
