@@ -6,41 +6,102 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* ... Existing styles ... */
-
-.App-main section {
-  margin-bottom: 60px;
-  animation: fade 1s ease-in-out;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item a:hover {
+  opacity: 0.8;
+}
+
+.intro {
+  padding: 80px 0;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro .lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
 }
 
 .projects-list li {
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 40px;
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
 
 .projects-list li:hover {
-  transform: scale(1.02);
+  transform: translateY(-10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-demo {
   /* Add appropriate styles for interactive project demos */
 }
 
-.contact-info li a:hover {
-  text-decoration: underline;
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
 }
 
 .testimonials-list {
@@ -56,6 +117,6 @@
   /* ... Existing media queries ... */
 
   .projects-list li {
-    padding: 10px;
+    padding: 20px;
   }
 }
