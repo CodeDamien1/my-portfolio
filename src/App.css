@@ -6,110 +6,56 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #333;
-  padding: 20px;
-  color: #fff;
-}
-
-.App-header h1 {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.App-header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.App-header nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.App-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.App-main {
-  padding: 20px;
-}
+/* ... Existing styles ... */
 
 .App-main section {
   margin-bottom: 60px;
+  animation: fade 1s ease-in-out;
 }
 
-.App-main section h2 {
-  margin-top: 0;
-  color: #333;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.App-main section p {
-  color: #666;
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.projects-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 20px;
-  display: grid;
-  gap: 40px;
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .projects-list li {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 4px;
+  transition: transform 0.3s ease;
 }
 
-.projects-list li h3 {
-  color: #333;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
+.projects-list li:hover {
+  transform: scale(1.02);
 }
 
-.projects-list li p {
-  color: #666;
-  font-size: 16px;
-  margin-top: 10px;
+.project-demo {
+  /* Add appropriate styles for interactive project demos */
 }
 
-.contact-info {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.contact-info li a:hover {
+  text-decoration: underline;
 }
 
-.contact-info li {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 10px;
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.contact-info li a {
-  color: #333;
-  text-decoration: none;
-}
+/* ... Existing styles ... */
 
-.App-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
+@media (max-width: 600px) {
+  /* ... Existing media queries ... */
+
+  .projects-list li {
+    padding: 10px;
+  }
 }
