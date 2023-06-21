@@ -51,7 +51,7 @@ function App() {
           <ul className="contact-info">
             <li>Email: example@example.com</li>
             <li>Phone: 123-456-7890</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">Your Profile</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/damien-lewis-23b873277/" target="_blank" rel="noopener noreferrer">Your Profile</a></li>
           </ul>
         </section>
       </main>
